@@ -1,8 +1,8 @@
+.idea
 .gradle
-build/
-
-# Ignore Gradle GUI config
-gradle-app.setting
-
-# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
-!gradle-wrapper.jar
+.build.gradle.swp
+build
+.DS_Store
+more-power-to-choose.iml
+more-power-to-choose.ipr
+more-power-to-choose.iws

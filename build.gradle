@@ -1,0 +1,25 @@
+buildscript {
+	repositories {
+		jcenter()
+	}
+
+	dependencies {
+		classpath 'com.bmuschko:gradle-tomcat-plugin:2.0'
+	}
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+apply plugin: 'idea'
+apply plugin: 'com.bmuschko.tomcat'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	def tomcatVersion = '7.0.57'
+	tomcat "org.apache.tomcat:catalina:${tomcatVersion}",
+	       "org.apache.tomcat:coyote:${tomcatVersion}",
+	       "org.apache.tomcat:jasper:${tomcatVersion}"
+}
